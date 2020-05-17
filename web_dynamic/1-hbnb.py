@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-""" Starts a Flash Web Application """
+""" Starts a Flash Web Application with HTML AirBNB Temlpate """
 from models import storage
-from models.state import State
-from models.city import City
-from models.amenity import Amenity
-from models.place import Place
 from os import environ
 from flask import Flask, render_template, url_for
 import uuid
@@ -47,4 +43,4 @@ def hbnb_filters(the_id=None):
 if __name__ == "__main__":
    """
     Flask App"""
-    app.run(host=host, port=port)
+    app.run(host=0.0.0.0, port=5000)
