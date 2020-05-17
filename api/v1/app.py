@@ -50,13 +50,11 @@ def setup_global_errors():
     for cls in HTTPException.__subclasses__():
         app.register_error_handler(cls, global_error_handler)
 
-
 if __name__ == "__main__":
-    """ Main Function """
-    host = environ.get('HBNB_API_HOST')
-    port = environ.get('HBNB_API_PORT')
-    if not host:
-        host = '0.0.0.0'
-    if not port:
-        port = '5000'
-    app.run(host=host, port=port, threaded=True)
+    """
+    MAIN Flask App
+    """
+    # initializes global error handling
+    setup_global_errors()
+    # start Flask app
+    app.run(host=host, port=port)
