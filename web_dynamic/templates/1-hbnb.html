@@ -9,8 +9,13 @@
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{ cache_id }}">
     <link rel="icon" href="../static/images/icon.png" />
     <title>HBnB</title>
-     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-     <script src="../static/scripts/1-hbnb.js?{{ cache_id }}"> </script>
+    
+    <!-- Import Javascript file from: static/scripts/1-hbnb.js -->
+    <script src="../static/scripts/1-hbnb.js?{{ cache_id }}"></script>
+
+    <!-- Import Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js?{{ cache_id }}"></script>
+
   </head>
   <body>
     <header>
@@ -42,7 +47,7 @@
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <li> <INPUT type="checkbox" data-id=":amenity_id" data-name=":amenity_name"> {{ amenity.name }}</li>
+	      <li> <INPUT type="checkbox" style="margin-right:10px;" data-id=":amenity_id" data-name=":amenity_name"> {{ amenity.name }}</li>
 	      {% endfor %}
 	    </ul>
 	  </div>
