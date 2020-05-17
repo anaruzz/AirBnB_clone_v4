@@ -26,7 +26,7 @@ def teardown_db(exception):
     """ Method calls .Close current SQLAchemy Session """
     storage.close()
 
-    
+
 @app.errorhandler(Exception)
 def global_error_handler(err):
     """
@@ -37,7 +37,7 @@ def global_error_handler(err):
             err.description = "Not found"
         message = {'error': err.description}
         code = err.code
-        else:
+    else:
         message = {'error': err}
         code = 500
     return make_response(jsonify(message), code)
