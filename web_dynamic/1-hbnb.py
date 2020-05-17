@@ -41,6 +41,4 @@ def hbnb_filters(the_id=None):
                            cache_id=uuid.uuid4())
 
 if __name__ == "__main__":
-   """
-    Flask App"""
-    app.run(host=0.0.0.0, port=5000)
+    app.run(host=host, port=port)
