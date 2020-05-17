@@ -26,8 +26,8 @@ def teardown_db(exception):
 @app.route('/1-hbnb/')
 def hbnb_filters(the_id=None):
     """ HBNB is alive! """
-    states_obj = storage.all(State).values()
-    states = dict([state.name, state] for state in state_obj)
+    states_objs = storage.all(State).values()
+    states = dict([state.name, state] for state in state_objs)
     amens = storage.all('Amenity').values()
     places = storage.all('Place').values()
     users = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
