@@ -15,7 +15,7 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 swagger = Swagger(app)
 app.url_map.strict_slashes = False
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-host = os.getenv('HBNB_API_HOST', '35.237.240.179')
+host = os.getenv('HBNB_API_HOST', '0.0.0.0')
 port = os.getenv('HBNB_API_PORT', 5000)
 app.register_blueprint(app_views)
 cors = CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
