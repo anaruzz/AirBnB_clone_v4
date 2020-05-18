@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
 const apiStatus = $('DIV#api_status');
-$.ajax('http://0.0.0.0:5001/api/v1/status/').done(function (data) {
+$.ajax('http://35.237.240.179:5001/api/v1/status/').done(function (data) {
     if (data.status === 'OK') {
       apiStatus.addClass('available');
     } else {
