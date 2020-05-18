@@ -15,7 +15,7 @@ app = Flask(__name__)
 # app.jinja_env.lstrip_blocks = True
 app.url_map.strict_slashes = False
 port = 5000
-host = '0.0.0.0'
+host = '35.237.240.179'
 
 
 @app.teardown_appcontext
