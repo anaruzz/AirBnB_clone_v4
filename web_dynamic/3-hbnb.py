@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that Starts a Flash Web Application """
+""" Starts a Flash Web Application """
 
 from models import storage
 from models.state import State
