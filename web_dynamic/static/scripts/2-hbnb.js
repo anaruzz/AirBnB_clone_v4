@@ -1,4 +1,4 @@
-// Script executed only when DOM is loaded with jQuery
+// Script that is executed only when DOM is loaded with jQuery
 
 let checked_box = {};
 $(document).ready(function () {
