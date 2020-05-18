@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Starts a Flash Web Application with HTML AirBNB Temlpate """
+""" Script that Starts a Flash Web Application with HTML AirBNB Temlpate """
+
 from models import storage
 from os import environ
 from flask import Flask, render_template, url_for
