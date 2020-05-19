@@ -1,5 +1,57 @@
-# AirBnB Clone - The Console
+<img src="https://github.com/afinesami/AirBnB_clone_v4/blob/master/web_dynamic/static/images/logo.png" width="180" height=auto />
+
+# AirBnB Clone : Phase # 4
+
+: API with Flasgger " Swagger "
+
+
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+
+## Description
+
+This Project AirBnB application and website, including the database, storage, RESTful API, Web Framework, and Front End.
+Currently the application is designed to run with 2 storage engine models:
+
+* Database Storage Engine:
+
+  * `/models/engine/db_storage.py`
+
+* File Storage Engine:
+
+  * `/models/engine/file_storage.py`
+
+## Environment
+
+* __OS:__ Ubuntu 16.04 LTS
+* __language:__ Python 3.5.2
+* __database:__ mysql Ver 14.14 Distrib 5.7.30
+* __web server:__ nginx
+* __application server:__ Flask 
+* __style:__
+  * __python:__ PEP8  (v. 1.7.0) 
+  * __web static:__ [W3C Validator](https://validator.w3.org/)
+  * __bash:__ ShellCheck
+
+<img src="https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step5.png" />
+
+### Expose ports from your Vagrant
+
+In your Vagrantfile, add this line for each port forwarded
+
+ I expose the port 5001 of my vm to the port 5001 on my computer
+config.vm.network :forwarded_port, guest: 5001, host: 5001 
+ Its important in your project, to use the AirBnB API with the port 5001
+
+# Starts a Flask web application :
+
+ubuntu@gc-1124-web-01-1588978073:~/AirBnB_clone_v4$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.0-hbnb
+* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+....
+
+# To start the API in the port 5001:
+
+ubuntu@gc-1124-web-01-1588978073:~/AirBnB_clone_v4$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+...
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -18,8 +70,6 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [Authors](#authors)
 * [License](#license)
 
-## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 
 ## Installation
 * Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
@@ -150,13 +200,12 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
-## Bugs
-No known bugs at this time. 
-
 
 ## Authors
-Lafine Sami - [Github](https://github.com/afinesami) / [Twitter](https://twitter.com/afinesami)
-Abidi Ghofrane - [Github](https://github.com/anaruzz) / [Twitter](https://twitter.com/AbidiGhofrane1) 
+
+* Lafine Sami - [Github](https://github.com/afinesami) / [Twitter](https://twitter.com/afinesami)
+
+* Abidi Ghofrane - [Github](https://github.com/anaruzz) / [Twitter](https://twitter.com/AbidiGhofrane1) 
 
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
