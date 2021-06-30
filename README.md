@@ -31,9 +31,9 @@ Currently the application is designed to run with 2 storage engine models:
 * __language:__ Python 3.5.2
 * __database:__ mysql Ver 14.14 Distrib 5.7.30
 * __web server:__ nginx
-* __application server:__ Flask 
+* __application server:__ Flask
 * __style:__
-  * __python:__ PEP8  (v. 1.7.0) 
+  * __python:__ PEP8  (v. 1.7.0)
   * __web static:__ [W3C Validator](https://validator.w3.org/)
   * __bash:__ ShellCheck
 
@@ -44,7 +44,7 @@ Currently the application is designed to run with 2 storage engine models:
 In your Vagrantfile, add this line for each port forwarded
 
  I expose the port 5001 of my vm to the port 5001 on my computer
-config.vm.network :forwarded_port, guest: 5001, host: 5001 
+config.vm.network :forwarded_port, guest: 5001, host: 5001
  Its important in your project, to use the AirBnB API with the port 5001
 
 # Starts a Flask web application :
@@ -219,8 +219,9 @@ Abidi Ghofrane - [Github](https://github.com/anaruzz) / [Twitter](https://twitte
 ## Authors
 
 * Lafine Sami - [Github](https://github.com/afinesami) / [Twitter](https://twitter.com/afinesami)
-
-* Abidi Ghofrane - [Github](https://github.com/anaruzz) / [Twitter](https://twitter.com/AbidiGhofrane1) 
+Full stack development student in Holberton Tunis
+* Abidi Ghofrane - [Github](https://github.com/anaruzz) / [Twitter](https://twitter.com/AbidiGhofrane1)
+Machine Learning Student in Holberton Tunis
 >>>>>>> 6c2da29a7f4cfb42888dc202482b9482ba815d88
 
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
