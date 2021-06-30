@@ -231,4 +231,4 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 
 Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection.
+Public Domain. No copyright protection.
